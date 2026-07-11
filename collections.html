@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra | Collections</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        body{
+            font-family:'Poppins',sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="bg-gray-50">
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="sticky top-0 z-50 bg-white shadow-md">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+        <div class="flex justify-between items-center h-20">
+
+            <a href="index.html">
+
+                <h1 class="text-3xl font-bold">
+                    Nostra
+                </h1>
+
+            </a>
+
+            <!-- Desktop Menu -->
+
+            <ul class="hidden md:flex items-center gap-8 font-medium">
+
+                <li>
+                    <a href="index.html"
+                        class="hover:text-teal-600 duration-300">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="collections.html"
+                        class="text-teal-600 font-semibold">
+                        Collections
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html"
+                        class="hover:text-teal-600 duration-300">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- Mobile Menu Button -->
+
+            <button class="menu-icon md:hidden text-2xl">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- ================= MOBILE SIDEBAR ================= -->
+
+<div class="side-navbar fixed top-0 -left-80 w-72 h-screen bg-black text-white p-8 transition-all duration-500 z-50">
+
+    <button class="close-btn text-3xl mb-10">
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </button>
+
+    <ul class="space-y-8 text-xl">
+
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="collections.html">Collections</a>
+        </li>
+
+        <li>
+            <a href="contact.html">Contact</a>
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- ================= PAGE HEADER ================= -->
+
+<section class="bg-white py-16 shadow-sm">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+
+        <h1 class="text-5xl font-bold">
+            Our Collections
+        </h1>
+
+        <p class="text-gray-500 mt-5 text-lg">
+
+            Discover premium fashion collections for every season and every style.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="py-10">
+
+    <div class="max-w-3xl mx-auto px-6">
+
+        <div class="flex items-center bg-white rounded-xl shadow-lg overflow-hidden">
+
+            <input
+                id="search"
+                type="text"
+                placeholder="Search products..."
+                class="flex-1 px-6 py-4 outline-none text-lg">
+
+            <button class="px-6 text-gray-600">
+
+                <i class="fa-solid fa-magnifying-glass text-xl"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= COLLECTIONS START ================= -->
+
+<section class="max-w-7xl mx-auto px-6 lg:px-12 pb-20">
+
+    <div class="grid lg:grid-cols-4 gap-10">
+
+        <!-- Part 2 starts here -->
+         <!-- ================= FILTER SIDEBAR ================= -->
+
+<aside class="bg-white shadow-lg rounded-xl p-6 h-fit">
+
+    <h2 class="text-3xl font-bold mb-8">
+        Filters
+    </h2>
+
+    <!-- Occasion -->
+
+    <div class="mb-8">
+
+        <h3 class="text-xl font-semibold mb-4">
+            Occasion
+        </h3>
+
+        <div class="space-y-3">
+
+            <label class="flex items-center gap-3 cursor-pointer">
+
+                <input
+                    type="checkbox"
+                    class="filter-checkbox w-5 h-5"
+                    value="Casual">
+
+                Casual
+
+            </label>
+
+            <label class="flex items-center gap-3 cursor-pointer">
+
+                <input
+                    type="checkbox"
+                    class="filter-checkbox w-5 h-5"
+                    value="Formal">
+
+                Formal
+
+            </label>
+
+            <label class="flex items-center gap-3 cursor-pointer">
+
+                <input
+                    type="checkbox"
+                    class="filter-checkbox w-5 h-5"
+                    value="Party">
+
+                Party
+
+            </label>
+
+        </div>
+
+    </div>
+
+    <!-- Colors -->
+
+    <div class="mb-8">
+
+        <h3 class="text-xl font-semibold mb-4">
+            Colors
+        </h3>
+
+        <div class="space-y-3">
+
+            <label class="flex items-center gap-3">
+
+                <input
+                    type="checkbox"
+                    class="filter-checkbox w-5 h-5"
+                    value="Black">
+
+                Black
+
+            </label>
+
+            <label class="flex items-center gap-3">
+
+                <input
+                    type="checkbox"
+                    class="filter-checkbox w-5 h-5"
+                    value="White">
+
+                White
+
+            </label>
+
+            <label class="flex items-center gap-3">
+
+                <input
+                    type="checkbox"
+                    class="filter-checkbox w-5 h-5"
+                    value="Blue">
+
+                Blue
+
+            </label>
+
+            <label class="flex items-center gap-3">
+
+                <input
+                    type="checkbox"
+                    class="filter-checkbox w-5 h-5"
+                    value="Red">
+
+                Red
+
+            </label>
+
+        </div>
+
+    </div>
+
+    <!-- Arrival -->
+
+    <div>
+
+        <h3 class="text-xl font-semibold mb-4">
+            Arrival
+        </h3>
+
+        <div class="space-y-3">
+
+            <label class="flex items-center gap-3">
+
+                <input
+                    type="checkbox"
+                    class="filter-checkbox w-5 h-5"
+                    value="New">
+
+                New
+
+            </label>
+
+            <label class="flex items-center gap-3">
+
+                <input
+                    type="checkbox"
+                    class="filter-checkbox w-5 h-5"
+                    value="Old">
+
+                Old
+
+            </label>
+
+        </div>
+
+    </div>
+
+</aside>
+
+<!-- ================= PRODUCT GRID ================= -->
+
+<div
+    id="product-grid"
+    class="lg:col-span-3 grid sm:grid-cols-2 xl:grid-cols-3 gap-8">
+
+    <!-- Part 3 starts here -->
+     <!-- ================= PRODUCT CARD 1 ================= -->
+
+<div class="product bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl duration-300"
+     data-name="White Hoodie"
+     data-category="Casual White New">
+
+    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&q=80"
+         class="h-80 w-full object-cover">
+
+    <div class="p-5">
+
+        <h3 class="text-xl font-semibold">White Hoodie</h3>
+
+        <p class="text-gray-500 mt-2">₹1499</p>
+
+    </div>
+
+</div>
+
+<!-- PRODUCT 2 -->
+
+<div class="product bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl duration-300"
+     data-name="Black Shirt"
+     data-category="Formal Black New">
+
+    <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=500&q=80"
+         class="h-80 w-full object-cover">
+
+    <div class="p-5">
+
+        <h3 class="text-xl font-semibold">Black Shirt</h3>
+
+        <p class="text-gray-500 mt-2">₹999</p>
+
+    </div>
+
+</div>
+
+<!-- PRODUCT 3 -->
+
+<div class="product bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl duration-300"
+     data-name="Blue T-Shirt"
+     data-category="Casual Blue Old">
+
+    <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=500&q=80"
+         class="h-80 w-full object-cover">
+
+    <div class="p-5">
+
+        <h3 class="text-xl font-semibold">Blue T-Shirt</h3>
+
+        <p class="text-gray-500 mt-2">₹899</p>
+
+    </div>
+
+</div>
+
+<!-- PRODUCT 4 -->
+
+<div class="product bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl duration-300"
+     data-name="Red Jacket"
+     data-category="Party Red New">
+
+    <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=500&q=80"
+         class="h-80 w-full object-cover">
+
+    <div class="p-5">
+
+        <h3 class="text-xl font-semibold">Red Jacket</h3>
+
+        <p class="text-gray-500 mt-2">₹1999</p>
+
+    </div>
+
+</div>
+
+<!-- PRODUCT 5 -->
+
+<div class="product bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl duration-300"
+     data-name="Party Dress"
+     data-category="Party Red New">
+
+    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=500&q=80"
+         class="h-80 w-full object-cover">
+
+    <div class="p-5">
+
+        <h3 class="text-xl font-semibold">Party Dress</h3>
+
+        <p class="text-gray-500 mt-2">₹2399</p>
+
+    </div>
+
+</div>
+
+<!-- PRODUCT 6 -->
+
+<div class="product bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl duration-300"
+     data-name="Formal Coat"
+     data-category="Formal Black Old">
+
+    <img src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=500&q=80"
+         class="h-80 w-full object-cover">
+
+    <div class="p-5">
+
+        <h3 class="text-xl font-semibold">Formal Coat</h3>
+
+        <p class="text-gray-500 mt-2">₹2599</p>
+
+    </div>
+
+</div>
+
+<!-- PRODUCT 7 -->
+
+<div class="product bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl duration-300"
+     data-name="Blue Jeans"
+     data-category="Casual Blue New">
+
+    <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=500&q=80"
+         class="h-80 w-full object-cover">
+
+    <div class="p-5">
+
+        <h3 class="text-xl font-semibold">Blue Jeans</h3>
+
+        <p class="text-gray-500 mt-2">₹1799</p>
+
+    </div>
+
+</div>
+
+<!-- PRODUCT 8 -->
+
+<div class="product bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl duration-300"
+     data-name="White Shirt"
+     data-category="Formal White New">
+
+    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500&q=80"
+         class="h-80 w-full object-cover">
+
+    <div class="p-5">
+
+        <h3 class="text-xl font-semibold">White Shirt</h3>
+
+        <p class="text-gray-500 mt-2">₹1299</p>
+
+    </div>
+
+</div>
+
+<!-- PRODUCT 9 -->
+
+<div class="product bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl duration-300"
+     data-name="Green Hoodie"
+     data-category="Casual Green New">
+
+    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500&q=80"
+         class="h-80 w-full object-cover">
+
+    <div class="p-5">
+
+        <h3 class="text-xl font-semibold">Green Hoodie</h3>
+
+        <p class="text-gray-500 mt-2">₹1599</p>
+
+    </div>
+
+</div>
+
+<!-- PRODUCT 10 -->
+
+<div class="product bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl duration-300"
+     data-name="Denim Jacket"
+     data-category="Casual Blue Old">
+
+    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&q=80"
+         class="h-80 w-full object-cover">
+
+    <div class="p-5">
+
+        <h3 class="text-xl font-semibold">Denim Jacket</h3>
+
+        <p class="text-gray-500 mt-2">₹2199</p>
+
+    </div>
+
+</div>
+
+<!-- PRODUCT 11 -->
+
+<div class="product bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl duration-300"
+     data-name="Classic Suit"
+     data-category="Formal Black New">
+
+    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=500&q=80"
+         class="h-80 w-full object-cover">
+
+    <div class="p-5">
+
+        <h3 class="text-xl font-semibold">Classic Suit</h3>
+
+        <p class="text-gray-500 mt-2">₹3499</p>
+
+    </div>
+
+</div>
+
+<!-- PRODUCT 12 -->
+
+<div class="product bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl duration-300"
+     data-name="Summer Dress"
+     data-category="Party White New">
+
+    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500&q=80"
+         class="h-80 w-full object-cover">
+
+    <div class="p-5">
+
+        <h3 class="text-xl font-semibold">Summer Dress</h3>
+
+        <p class="text-gray-500 mt-2">₹2699</p>
+
+    </div>
+
+</div>
+<!-- ================= END PRODUCT GRID ================= -->
+
+</div>
+
+<!-- End Grid -->
+
+</div>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="bg-gray-100 py-20 mt-10">
+
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+        <h2 class="text-4xl font-bold mb-5">
+            Join Our Newsletter
+        </h2>
+
+        <p class="text-gray-600 text-lg mb-8">
+            Subscribe to receive the latest fashion collections,
+            offers and exclusive discounts.
+        </p>
+
+        <div class="flex flex-col md:flex-row gap-4 justify-center">
+
+            <input
+                id="newsletter-email"
+                type="email"
+                placeholder="Enter your email"
+                class="flex-1 max-w-xl border-2 border-gray-300 rounded-lg px-5 py-4 focus:outline-none focus:border-black">
+
+            <button
+                id="subscribe-btn"
+                class="bg-black text-white px-8 rounded-lg hover:bg-gray-800 duration-300">
+
+                Subscribe
+
+            </button>
+
+        </div>
+
+        <p id="newsletter-error"
+            class="text-red-500 mt-4">
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-black text-white py-16">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+        <div class="grid md:grid-cols-3 gap-10">
+
+            <!-- Logo -->
+
+            <div>
+
+                <h1 class="text-4xl font-bold">
+                    Nostra
+                </h1>
+
+                <p class="text-gray-400 mt-5 leading-8">
+
+                    Discover premium fashion collections
+                    for every season with quality,
+                    comfort and modern style.
+
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div>
+
+                <h3 class="text-2xl font-semibold mb-5">
+                    Quick Links
+                </h3>
+
+                <ul class="space-y-3">
+
+                    <li>
+
+                        <a href="index.html"
+                           class="hover:text-teal-400">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="collections.html"
+                           class="hover:text-teal-400">
+
+                            Collections
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="contact.html"
+                           class="hover:text-teal-400">
+
+                            Contact
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Social -->
+
+            <div>
+
+                <h3 class="text-2xl font-semibold mb-5">
+                    Follow Us
+                </h3>
+
+                <div class="flex gap-5 text-3xl">
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram hover:text-pink-500 duration-300"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook hover:text-blue-500 duration-300"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-twitter hover:text-sky-400 duration-300"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin hover:text-blue-400 duration-300"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr class="my-10 border-gray-700">
+
+        <p class="text-center text-gray-400">
+
+            © 2026 Nostra. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>

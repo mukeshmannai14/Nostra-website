@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra | Home</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        body{
+            font-family:'Poppins',sans-serif;
+        }
+
+        .slide{
+            display:none;
+        }
+
+        .slide.active{
+            display:block;
+        }
+    </style>
+
+</head>
+<body class="bg-white">
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="flex justify-between items-center px-8 lg:px-16 py-5 shadow-md sticky top-0 bg-white z-50">
+
+    <h1 class="text-3xl font-bold">
+        Nostra
+    </h1>
+
+    <ul class="hidden md:flex gap-8 font-medium">
+
+        <li>
+            <a href="index.html" class="hover:text-teal-600 transition">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="collections.html" class="hover:text-teal-600 transition">
+                Collections
+            </a>
+        </li>
+
+        <li>
+            <a href="contact.html" class="hover:text-teal-600 transition">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+    <button class="menu-icon md:hidden text-2xl">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+</nav>
+
+<!-- ================= MOBILE MENU ================= -->
+
+<div class="side-navbar fixed top-0 -left-80 w-72 h-screen bg-black text-white p-8 transition-all duration-500 z-50">
+
+    <button class="close-btn text-3xl mb-10">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <ul class="space-y-8 text-xl">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="collections.html">Collections</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+</div>
+
+<!-- ================= HERO SLIDER ================= -->
+
+<section class="relative overflow-hidden">
+
+    <!-- Slide 1 -->
+
+   <div class="slide active block">
+
+        <img
+        src="images/slide1.jpg"
+        class="w-full h-[550px] object-cover">
+
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-5">
+
+            <h1 class="text-4xl md:text-6xl font-bold mb-5">
+                Level Up Your Style
+            </h1>
+
+            <p class="text-lg md:text-xl mb-8">
+                Discover the latest fashion collections.
+            </p>
+
+            <button class="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-gray-200">
+                Shop Now
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Slide 2 -->
+
+   <div class="slide hidden">
+
+        <img
+        src="images/slide-2.jpg"
+        class="w-full h-[550px] object-cover">
+
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
+
+            <h1 class="text-4xl md:text-6xl font-bold mb-5">
+                Summer Collection
+            </h1>
+
+            <p class="text-lg md:text-xl mb-8">
+                Up to 50% OFF
+            </p>
+
+            <button class="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-gray-200">
+                Explore
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Slide 3 -->
+
+   <div class="slide hidden">
+
+        <img
+        src="images/slide-3.jpg"
+        class="w-full h-[550px] object-cover">
+
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
+
+            <h1 class="text-4xl md:text-6xl font-bold mb-5">
+                New Arrivals
+            </h1>
+
+            <p class="text-lg md:text-xl mb-8">
+                Premium Fashion Collection
+            </p>
+
+            <button class="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-gray-200">
+                Shop Now
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Previous -->
+
+    <button class="prev absolute top-1/2 left-5 -translate-y-1/2 text-white text-5xl">
+
+        &#10094;
+
+    </button>
+
+    <!-- Next -->
+
+    <button class="next absolute top-1/2 right-5 -translate-y-1/2 text-white text-5xl">
+
+        &#10095;
+
+    </button>
+
+</section>
+
+<!-- Part 2 Starts Here -->
+ <!-- ================= BRANDS ================= -->
+
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+
+    <div class="text-center mb-12">
+
+        <h2 class="text-4xl font-bold">
+            Brands
+        </h2>
+
+        <p class="text-gray-500 mt-3">
+            Trusted by the world's leading fashion brands.
+        </p>
+
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
+
+        <div class="hover:scale-110 transition duration-300">
+            <i class="fa-solid fa-vest-patches text-6xl"></i> </i>
+            <p class="mt-3 font-semibold">Nike</p>
+        </div>
+
+        <div class="hover:scale-110 transition duration-300">
+            <i class="fa-solid fa-shirt text-6xl"></i>
+            <p class="mt-3 font-semibold">Zara</p>
+        </div>
+
+        <div class="hover:scale-110 transition duration-300">
+            <i class="fa-solid fa-crown text-6xl"></i>
+            <p class="mt-3 font-semibold">Louis Vuitton</p>
+        </div>
+
+        <div class="hover:scale-110 transition duration-300">
+            <i class="fa-solid fa-gem text-6xl"></i>
+            <p class="mt-3 font-semibold">Gucci</p>
+        </div>
+
+        <div class="hover:scale-110 transition duration-300">
+            <i class="fa-solid fa-socks text-6xl"></i>
+            <p class="mt-3 font-semibold">Adidas</p>
+        </div>
+
+        <div class="hover:scale-110 transition duration-300">
+            <i class="fa-solid fa-bag-shopping text-6xl"></i>
+            <p class="mt-3 font-semibold">Puma</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CUSTOMER EXPERIENCE ================= -->
+
+<section class="bg-gray-100 py-20">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+        <div class="flex flex-col lg:flex-row justify-between items-center gap-8 mb-14">
+
+            <div>
+
+                <h2 class="text-4xl font-bold leading-tight">
+                    We Provide the Best <br>
+                    Customer Experience
+                </h2>
+
+            </div>
+
+            <div>
+
+                <p class="text-gray-600 text-lg">
+                    We ensure our customers enjoy premium quality,
+                    fast delivery, and excellent support every time.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Service Cards -->
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Card 1 -->
+
+            <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition">
+
+                <i class="fa-solid fa-circle-check text-4xl text-teal-600 mb-5"></i>
+
+                <h3 class="text-2xl font-bold mb-3">
+                    Original Products
+                </h3>
+
+                <p class="text-gray-600">
+                    Every product is 100% genuine and carefully selected
+                    from premium fashion brands.
+                </p>
+
+            </div>
+
+
+            <!-- Card 2 -->
+
+            <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition">
+
+                <i class="fa-solid fa-truck-fast text-4xl text-teal-600 mb-5"></i>
+
+                <h3 class="text-2xl font-bold mb-3">
+                    Fast Delivery
+                </h3>
+
+                <p class="text-gray-600">
+                    Get your favorite products delivered safely
+                    to your doorstep in the shortest time.
+                </p>
+
+            </div>
+
+
+            <!-- Card 3 -->
+
+            <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition">
+
+                <i class="fa-solid fa-headset text-4xl text-teal-600 mb-5"></i>
+
+                <h3 class="text-2xl font-bold mb-3">
+                    24/7 Support
+                </h3>
+
+                <p class="text-gray-600">
+                    Our dedicated support team is available
+                    around the clock to assist you.
+                </p>
+
+            </div>
+
+
+            <!-- Card 4 -->
+
+            <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition">
+
+                <i class="fa-solid fa-face-smile text-4xl text-teal-600 mb-5"></i>
+
+                <h3 class="text-2xl font-bold mb-3">
+                    Customer Satisfaction
+                </h3>
+
+                <p class="text-gray-600">
+                    Your happiness is our priority.
+                    We strive to provide an exceptional shopping experience.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PART 3 STARTS BELOW ================= -->
+ <!-- ================= NEW ARRIVALS ================= -->
+
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-20">
+
+    <div class="flex justify-between items-center mb-10">
+
+        <h2 class="text-4xl font-bold">
+            New Arrivals
+        </h2>
+
+        <a href="collections.html"
+            class="text-teal-600 font-semibold hover:underline">
+            View All
+        </a>
+
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <!-- Product 1 -->
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl duration-300">
+
+            <div class="relative">
+
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&q=80"
+                    class="h-80 w-full object-cover">
+
+                <span class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded">
+                    New
+                </span>
+
+                <button class="absolute top-4 right-4 bg-white p-2 rounded-full">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="p-5">
+
+                <h3 class="text-xl font-semibold">
+                    White Hoodie
+                </h3>
+
+                <p class="text-gray-500 mt-2">
+                    Premium Cotton Hoodie
+                </p>
+
+                <div class="flex justify-between items-center mt-5">
+
+                    <h4 class="text-2xl font-bold">
+                        ₹1499
+                    </h4>
+
+                    <button class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+                        Buy
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Product 2 -->
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl duration-300">
+
+            <div class="relative">
+
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=500&q=80"
+                    class="h-80 w-full object-cover">
+
+                <span class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded">
+                    New
+                </span>
+
+                <button class="absolute top-4 right-4 bg-white p-2 rounded-full">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="p-5">
+
+                <h3 class="text-xl font-semibold">
+                    Blue T-Shirt
+                </h3>
+
+                <p class="text-gray-500 mt-2">
+                    Comfortable Everyday Wear
+                </p>
+
+                <div class="flex justify-between items-center mt-5">
+
+                    <h4 class="text-2xl font-bold">
+                        ₹899
+                    </h4>
+
+                    <button class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+                        Buy
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Product 3 -->
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl duration-300">
+
+            <div class="relative">
+
+                <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=500&q=80"
+                    class="h-80 w-full object-cover">
+
+                <span class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded">
+                    New
+                </span>
+
+                <button class="absolute top-4 right-4 bg-white p-2 rounded-full">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="p-5">
+
+                <h3 class="text-xl font-semibold">
+                    Party Dress
+                </h3>
+
+                <p class="text-gray-500 mt-2">
+                    Elegant Modern Collection
+                </p>
+
+                <div class="flex justify-between items-center mt-5">
+
+                    <h4 class="text-2xl font-bold">
+                        ₹2399
+                    </h4>
+
+                    <button class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+                        Buy
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Product 4 -->
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl duration-300">
+
+            <div class="relative">
+
+                <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=500&q=80"
+                    class="h-80 w-full object-cover">
+
+                <span class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded">
+                    New
+                </span>
+
+                <button class="absolute top-4 right-4 bg-white p-2 rounded-full">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="p-5">
+
+                <h3 class="text-xl font-semibold">
+                    Red Jacket
+                </h3>
+
+                <p class="text-gray-500 mt-2">
+                    Stylish Winter Wear
+                </p>
+
+                <div class="flex justify-between items-center mt-5">
+
+                    <h4 class="text-2xl font-bold">
+                        ₹1999
+                    </h4>
+
+                    <button class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+                        Buy
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= MOST WANTED ================= -->
+
+<section class="bg-gray-100 py-20">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+        <div class="flex justify-between items-center mb-10">
+
+            <h2 class="text-4xl font-bold">
+                Most Wanted
+            </h2>
+
+            <a href="collections.html"
+                class="text-teal-600 font-semibold hover:underline">
+                View All
+            </a>
+
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Repeat the same product card structure here with different images/products -->
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PART 4 STARTS BELOW ================= -->
+ <!-- ================= LIMITED OFFER ================= -->
+
+<section class="bg-black text-white py-20">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+            <!-- Image -->
+
+            <div>
+
+                <img
+                    src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=900&q=80"
+                    alt="Limited Offer"
+                    class="rounded-xl shadow-2xl w-full">
+
+            </div>
+
+            <!-- Content -->
+
+            <div>
+
+                <span class="bg-red-600 px-4 py-2 rounded-full text-sm">
+                    Limited Time Offer
+                </span>
+
+                <h2 class="text-4xl lg:text-5xl font-bold mt-6">
+                    35% OFF This Week
+                </h2>
+
+                <p class="text-gray-300 mt-6 text-lg leading-8">
+                    Discover premium fashion collections with exclusive discounts.
+                    Shop now before the offer ends and upgrade your wardrobe.
+                </p>
+
+                <button
+                    class="mt-8 bg-white text-black px-8 py-4 rounded-lg font-semibold hover:bg-gray-200 duration-300">
+
+                    Shop Now
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="py-20">
+
+    <div class="max-w-3xl mx-auto text-center px-6">
+
+        <h2 class="text-4xl font-bold">
+            Join Our Newsletter
+        </h2>
+
+        <p class="text-gray-500 mt-4">
+            Subscribe to receive the latest offers,
+            fashion updates and exclusive discounts.
+        </p>
+
+        <div class="flex flex-col md:flex-row gap-4 mt-8">
+
+            <input
+                id="newsletter-email"
+                type="email"
+                placeholder="Enter your email"
+                class="flex-1 border-2 border-gray-300 rounded-lg px-5 py-4 focus:outline-none focus:border-black">
+
+            <button
+                id="subscribe-btn"
+                class="bg-black text-white px-8 rounded-lg hover:bg-gray-800">
+
+                Subscribe
+
+            </button>
+
+        </div>
+
+        <p id="newsletter-error" class="text-red-500 mt-3"></p>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-gray-900 text-white py-16">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+        <div class="grid md:grid-cols-3 gap-10">
+
+            <!-- Logo -->
+
+            <div>
+
+                <h1 class="text-4xl font-bold">
+                    Nostra
+                </h1>
+
+                <p class="text-gray-400 mt-5 leading-8">
+                    Discover premium fashion collections designed
+                    for every occasion with modern styles and
+                    exceptional quality.
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div>
+
+                <h3 class="text-2xl font-semibold mb-5">
+                    Quick Links
+                </h3>
+
+                <ul class="space-y-3">
+
+                    <li><a href="index.html" class="hover:text-teal-400">Home</a></li>
+
+                    <li><a href="collections.html" class="hover:text-teal-400">Collections</a></li>
+
+                    <li><a href="contact.html" class="hover:text-teal-400">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Social -->
+
+            <div>
+
+                <h3 class="text-2xl font-semibold mb-5">
+                    Follow Us
+                </h3>
+
+                <div class="flex gap-5 text-3xl">
+
+                    <a href="#" class="hover:text-pink-500">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="hover:text-blue-500">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#" class="hover:text-sky-400">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="#" class="hover:text-blue-400">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr class="my-10 border-gray-700">
+
+        <p class="text-center text-gray-400">
+            © 2026 Nostra. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
