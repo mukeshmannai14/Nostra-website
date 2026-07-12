@@ -1,6 +1,6 @@
-// ==========================================
+
 // MOBILE SIDEBAR
-// ==========================================
+
 
 const menuBtn = document.querySelector(".menu-icon");
 const sideNavbar = document.querySelector(".side-navbar");
@@ -28,9 +28,8 @@ if (closeBtn && sideNavbar) {
 
 }
 
-// ==========================================
 // HERO SLIDER
-// ==========================================
+
 
 const slides = document.querySelectorAll(".slide");
 const next = document.querySelector(".next");
@@ -115,10 +114,9 @@ if (slides.length > 0) {
     }, 4000);
 
 }
-// ==========================================
+
 // COLLECTIONS PAGE
 // SEARCH + FILTER
-// ==========================================
 
 const searchInput = document.getElementById("search");
 const productCards = document.querySelectorAll(".product");
@@ -180,9 +178,9 @@ if (searchInput && productCards.length > 0) {
     });
 
 }
-// ==========================================
+
 // CONTACT PAGE VALIDATION
-// ==========================================
+
 
 const contactForm = document.querySelector(".contact-form");
 
