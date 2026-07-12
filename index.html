@@ -643,45 +643,56 @@
 
 </section>
 
+
+
 <!-- ================= NEWSLETTER ================= -->
 
-<section class="py-20">
+<section class="py-20 bg-gray-100">
 
-    <div class="max-w-3xl mx-auto text-center px-6">
+    <div class="max-w-6xl mx-auto px-6">
 
-        <h2 class="text-4xl font-bold">
-            Join Our Newsletter
-        </h2>
+        <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12">
 
-        <p class="text-gray-500 mt-4">
-            Subscribe to receive the latest offers,
-            fashion updates and exclusive discounts.
-        </p>
+            <div class="text-center">
 
-        <div class="flex flex-col md:flex-row gap-4 mt-8">
+                <h2 class="text-3xl md:text-5xl font-bold">
+                    Join Our Newsletter
+                </h2>
 
-            <input
-                id="newsletter-email"
-                type="email"
-                placeholder="Enter your email"
-                class="flex-1 border-2 border-gray-300 rounded-lg px-5 py-4 focus:outline-none focus:border-black">
+                <p class="text-gray-500 mt-4 text-base md:text-lg">
+                    Subscribe to receive the latest offers, fashion updates,
+                    and exclusive discounts delivered to your inbox.
+                </p>
 
-            <button
-                id="subscribe-btn"
-                class="bg-black text-white px-8 rounded-lg hover:bg-gray-800">
+            </div>
 
-                Subscribe
+            <div class="mt-10 flex flex-col md:flex-row gap-4">
 
-            </button>
+                <input
+                    id="newsletter-email"
+                    type="email"
+                    placeholder="Enter your email"
+                    class="flex-1 border-2 border-gray-300 rounded-xl px-6 py-4 text-lg focus:outline-none focus:border-black">
+
+                <button
+                    id="subscribe-btn"
+                    class="bg-black text-white px-10 py-4 rounded-xl font-semibold hover:bg-gray-800 transition duration-300 md:min-w-[180px]">
+
+                    Subscribe
+
+                </button>
+
+            </div>
+
+            <p id="newsletter-error"
+               class="text-red-500 text-center mt-4">
+            </p>
 
         </div>
-
-        <p id="newsletter-error" class="text-red-500 mt-3"></p>
 
     </div>
 
 </section>
-
 <!-- ================= FOOTER ================= -->
 
 <footer class="bg-gray-900 text-white py-16">
